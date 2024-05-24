@@ -1,272 +1,509 @@
-.bg-custom{background-color: aqua !important;}
-.brick {
-    height: 2px;
-    width: 2px;
-    box-shadow: 2px 2px 0px #ff9999, 4px 2px 0px #ff9999, 6px 2px 0px #ff9999,
-      8px 2px 0px #ff9999, 10px 2px 0px #ff9999, 12px 2px 0px #ff9999,
-      14px 2px 0px #ff9999, 16px 2px 0px #ff9999, 18px 2px 0px #ff9999,
-      20px 2px 0px #ff9999, 22px 2px 0px #ff9999, 24px 2px 0px #ff9999,
-      26px 2px 0px #ff9999, 28px 2px 0px #ff9999, 30px 2px 0px #ff9999,
-      32px 2px 0px #ff9999, 2px 4px 0px #cc3300, 4px 4px 0px #cc3300,
-      6px 4px 0px #cc3300, 8px 4px 0px #cc3300, 10px 4px 0px #cc3300,
-      12px 4px 0px #cc3300, 14px 4px 0px #cc3300, 16px 4px 0px #000,
-      18px 4px 0px #cc3300, 20px 4px 0px #cc3300, 22px 4px 0px #cc3300,
-      24px 4px 0px #cc3300, 26px 4px 0px #cc3300, 28px 4px 0px #cc3300,
-      30px 4px 0px #cc3300, 32px 4px 0px #000, 2px 6px 0px #cc3300,
-      4px 6px 0px #cc3300, 6px 6px 0px #cc3300, 8px 6px 0px #cc3300,
-      10px 6px 0px #cc3300, 12px 6px 0px #cc3300, 14px 6px 0px #cc3300,
-      16px 6px 0px #000, 18px 6px 0px #cc3300, 20px 6px 0px #cc3300,
-      22px 6px 0px #cc3300, 24px 6px 0px #cc3300, 26px 6px 0px #cc3300,
-      28px 6px 0px #cc3300, 30px 6px 0px #cc3300, 32px 6px 0px #000,
-      2px 8px 0px #000, 4px 8px 0px #000, 6px 8px 0px #000, 8px 8px 0px #000,
-      10px 8px 0px #000, 12px 8px 0px #000, 14px 8px 0px #000, 16px 8px 0px #000,
-      18px 8px 0px #000, 20px 8px 0px #000, 22px 8px 0px #000, 24px 8px 0px #000,
-      26px 8px 0px #000, 28px 8px 0px #000, 30px 8px 0px #000, 32px 8px 0px #000,
-      2px 10px 0px #cc3300, 4px 10px 0px #cc3300, 6px 10px 0px #cc3300,
-      8px 10px 0px #000, 10px 10px 0px #cc3300, 12px 10px 0px #cc3300,
-      14px 10px 0px #cc3300, 16px 10px 0px #cc3300, 18px 10px 0px #cc3300,
-      20px 10px 0px #cc3300, 22px 10px 0px #cc3300, 24px 10px 0px #000,
-      26px 10px 0px #cc3300, 28px 10px 0px #cc3300, 30px 10px 0px #cc3300,
-      32px 10px 0px #cc3300, 2px 12px 0px #cc3300, 4px 12px 0px #cc3300,
-      6px 12px 0px #cc3300, 8px 12px 0px #000, 10px 12px 0px #cc3300,
-      12px 12px 0px #cc3300, 14px 12px 0px #cc3300, 16px 12px 0px #cc3300,
-      18px 12px 0px #cc3300, 20px 12px 0px #cc3300, 22px 12px 0px #cc3300,
-      24px 12px 0px #000, 26px 12px 0px #cc3300, 28px 12px 0px #cc3300,
-      30px 12px 0px #cc3300, 32px 12px 0px #cc3300, 2px 14px 0px #cc3300,
-      4px 14px 0px #cc3300, 6px 14px 0px #cc3300, 8px 14px 0px #000,
-      10px 14px 0px #cc3300, 12px 14px 0px #cc3300, 14px 14px 0px #cc3300,
-      16px 14px 0px #cc3300, 18px 14px 0px #cc3300, 20px 14px 0px #cc3300,
-      22px 14px 0px #cc3300, 24px 14px 0px #000, 26px 14px 0px #cc3300,
-      28px 14px 0px #cc3300, 30px 14px 0px #cc3300, 32px 14px 0px #cc3300,
-      2px 16px 0px #000, 4px 16px 0px #000, 6px 16px 0px #000, 8px 16px 0px #000,
-      10px 16px 0px #000, 12px 16px 0px #000, 14px 16px 0px #000,
-      16px 16px 0px #000, 18px 16px 0px #000, 20px 16px 0px #000,
-      22px 16px 0px #000, 24px 16px 0px #000, 26px 16px 0px #000,
-      28px 16px 0px #000, 30px 16px 0px #000, 32px 16px 0px #000,
-      2px 18px 0px #cc3300, 4px 18px 0px #cc3300, 6px 18px 0px #cc3300,
-      8px 18px 0px #cc3300, 10px 18px 0px #cc3300, 12px 18px 0px #cc3300,
-      14px 18px 0px #cc3300, 16px 18px 0px #000, 18px 18px 0px #cc3300,
-      20px 18px 0px #cc3300, 22px 18px 0px #cc3300, 24px 18px 0px #cc3300,
-      26px 18px 0px #cc3300, 28px 18px 0px #cc3300, 30px 18px 0px #cc3300,
-      32px 18px 0px #000, 2px 20px 0px #cc3300, 4px 20px 0px #cc3300,
-      6px 20px 0px #cc3300, 8px 20px 0px #cc3300, 10px 20px 0px #cc3300,
-      12px 20px 0px #cc3300, 14px 20px 0px #cc3300, 16px 20px 0px #000,
-      18px 20px 0px #cc3300, 20px 20px 0px #cc3300, 22px 20px 0px #cc3300,
-      24px 20px 0px #cc3300, 26px 20px 0px #cc3300, 28px 20px 0px #cc3300,
-      30px 20px 0px #cc3300, 32px 20px 0px #000, 2px 22px 0px #cc3300,
-      4px 22px 0px #cc3300, 6px 22px 0px #cc3300, 8px 22px 0px #cc3300,
-      10px 22px 0px #cc3300, 12px 22px 0px #cc3300, 14px 22px 0px #cc3300,
-      16px 22px 0px #000, 18px 22px 0px #cc3300, 20px 22px 0px #cc3300,
-      22px 22px 0px #cc3300, 24px 22px 0px #cc3300, 26px 22px 0px #cc3300,
-      28px 22px 0px #cc3300, 30px 22px 0px #cc3300, 32px 22px 0px #000,
-      2px 24px 0px #000, 4px 24px 0px #000, 6px 24px 0px #000, 8px 24px 0px #000,
-      10px 24px 0px #000, 12px 24px 0px #000, 14px 24px 0px #000,
-      16px 24px 0px #000, 18px 24px 0px #000, 20px 24px 0px #000,
-      22px 24px 0px #000, 24px 24px 0px #000, 26px 24px 0px #000,
-      28px 24px 0px #000, 30px 24px 0px #000, 32px 24px 0px #000,
-      2px 26px 0px #cc3300, 4px 26px 0px #cc3300, 6px 26px 0px #cc3300,
-      8px 26px 0px #000, 10px 26px 0px #cc3300, 12px 26px 0px #cc3300,
-      14px 26px 0px #cc3300, 16px 26px 0px #cc3300, 18px 26px 0px #cc3300,
-      20px 26px 0px #cc3300, 22px 26px 0px #cc3300, 24px 26px 0px #000,
-      26px 26px 0px #cc3300, 28px 26px 0px #cc3300, 30px 26px 0px #cc3300,
-      32px 26px 0px #cc3300, 2px 28px 0px #cc3300, 4px 28px 0px #cc3300,
-      6px 28px 0px #cc3300, 8px 28px 0px #000, 10px 28px 0px #cc3300,
-      12px 28px 0px #cc3300, 14px 28px 0px #cc3300, 16px 28px 0px #cc3300,
-      18px 28px 0px #cc3300, 20px 28px 0px #cc3300, 22px 28px 0px #cc3300,
-      24px 28px 0px #000, 26px 28px 0px #cc3300, 28px 28px 0px #cc3300,
-      30px 28px 0px #cc3300, 32px 28px 0px #cc3300, 2px 30px 0px #cc3300,
-      4px 30px 0px #cc3300, 6px 30px 0px #cc3300, 8px 30px 0px #000,
-      10px 30px 0px #cc3300, 12px 30px 0px #cc3300, 14px 30px 0px #cc3300,
-      16px 30px 0px #cc3300, 18px 30px 0px #cc3300, 20px 30px 0px #cc3300,
-      22px 30px 0px #cc3300, 24px 30px 0px #000, 26px 30px 0px #cc3300,
-      28px 30px 0px #cc3300, 30px 30px 0px #cc3300, 32px 30px 0px #cc3300,
-      2px 32px 0px #000, 4px 32px 0px #000, 6px 32px 0px #000, 8px 32px 0px #000,
-      10px 32px 0px #000, 12px 32px 0px #000, 14px 32px 0px #000,
-      16px 32px 0px #000, 18px 32px 0px #000, 20px 32px 0px #000,
-      22px 32px 0px #000, 24px 32px 0px #000, 26px 32px 0px #000,
-      28px 32px 0px #000, 30px 32px 0px #000, 32px 32px 0px #000;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.custom-bg{
+  background: hsla(354, 95%, 24%, 1);
+
+  background: linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#76030f", endColorstr="#121b67", GradientType=1 );}
+col{
+  background-image:  
+  radial-gradient( transparent 0.5px),
+  radial-gradient(#fafcfd6c 0.8px, #e7edee80 0.8px);
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
+  background-color: #f9fcfb71;
+  margin: 0; 
+}
+html{
+  font-family: "Montserrat", sans-serif;
+}
+h6{
+  font-family: "Montserrat";
+}
+nav navbar{
+  font-size: "Montserrat";
+  font-size: small;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 6px 7px rgba(0, 0, 0, 0.1),
+    inset 0 2px 4px rgba(255, 255, 255, 0.5); /* Hinzufügen eines inneren Schattens für Tiefe */
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  background-image: linear-gradient(
+  to top,
+  rgba(206, 255, 255, 0.75),
+  rgba(216, 255, 244, 0.65)
+  );
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 0%;
+}
+
+.button:hover {
+  box-shadow: 0 7px 9px rgba(0, 0, 0, 0.15),
+    inset 0 3px 5px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes fillButtonAndPress {
+  0% {
+    background-size: 100% 0%;
+    transform: translateY(0);
+    border: 2px solid rgba(255, 255, 255, 0.6);
   }
-  .brick.one {
-    transform: translateX(-60px);
-  }
-  .mush {
-    height: 2px;
-    width: 2px;
-    box-shadow: 14px 2px 0px #fc9838, 16px 2px 0px #fc9838, 18px 2px 0px #fc9838,
-      20px 2px 0px #fc9838, 12px 4px 0px #fc9838, 14px 4px 0px #fc9838,
-      16px 4px 0px #fc9838, 18px 4px 0px #fc9838, 20px 4px 0px #d82800,
-      22px 4px 0px #d82800, 10px 6px 0px #fc9838, 12px 6px 0px #fc9838,
-      14px 6px 0px #fc9838, 16px 6px 0px #fc9838, 18px 6px 0px #d82800,
-      20px 6px 0px #d82800, 22px 6px 0px #d82800, 24px 6px 0px #d82800,
-      8px 8px 0px #fc9838, 10px 8px 0px #fc9838, 12px 8px 0px #fc9838,
-      14px 8px 0px #fc9838, 16px 8px 0px #fc9838, 18px 8px 0px #d82800,
-      20px 8px 0px #d82800, 22px 8px 0px #d82800, 24px 8px 0px #d82800,
-      26px 8px 0px #d82800, 6px 10px 0px #fc9838, 8px 10px 0px #fc9838,
-      10px 10px 0px #fc9838, 12px 10px 0px #fc9838, 14px 10px 0px #fc9838,
-      16px 10px 0px #fc9838, 18px 10px 0px #fc9838, 20px 10px 0px #d82800,
-      22px 10px 0px #d82800, 24px 10px 0px #d82800, 26px 10px 0px #fc9838,
-      28px 10px 0px #fc9838, 4px 12px 0px #fc9838, 6px 12px 0px #fc9838,
-      8px 12px 0px #d82800, 10px 12px 0px #d82800, 12px 12px 0px #d82800,
-      14px 12px 0px #fc9838, 16px 12px 0px #fc9838, 18px 12px 0px #fc9838,
-      20px 12px 0px #fc9838, 22px 12px 0px #fc9838, 24px 12px 0px #fc9838,
-      26px 12px 0px #fc9838, 28px 12px 0px #fc9838, 30px 12px 0px #fc9838,
-      4px 14px 0px #fc9838, 6px 14px 0px #d82800, 8px 14px 0px #d82800,
-      10px 14px 0px #d82800, 12px 14px 0px #d82800, 14px 14px 0px #d82800,
-      16px 14px 0px #fc9838, 18px 14px 0px #fc9838, 20px 14px 0px #fc9838,
-      22px 14px 0px #fc9838, 24px 14px 0px #fc9838, 26px 14px 0px #fc9838,
-      28px 14px 0px #fc9838, 30px 14px 0px #fc9838, 2px 16px 0px #fc9838,
-      4px 16px 0px #fc9838, 6px 16px 0px #d82800, 8px 16px 0px #d82800,
-      10px 16px 0px #d82800, 12px 16px 0px #d82800, 14px 16px 0px #d82800,
-      16px 16px 0px #fc9838, 18px 16px 0px #fc9838, 20px 16px 0px #fc9838,
-      22px 16px 0px #fc9838, 24px 16px 0px #fc9838, 26px 16px 0px #d82800,
-      28px 16px 0px #d82800, 30px 16px 0px #fc9838, 32px 16px 0px #fc9838,
-      2px 18px 0px #fc9838, 4px 18px 0px #fc9838, 6px 18px 0px #d82800,
-      8px 18px 0px #d82800, 10px 18px 0px #d82800, 12px 18px 0px #d82800,
-      14px 18px 0px #d82800, 16px 18px 0px #fc9838, 18px 18px 0px #fc9838,
-      20px 18px 0px #fc9838, 22px 18px 0px #fc9838, 24px 18px 0px #fc9838,
-      26px 18px 0px #d82800, 28px 18px 0px #d82800, 30px 18px 0px #d82800,
-      32px 18px 0px #fc9838, 2px 20px 0px #fc9838, 4px 20px 0px #fc9838,
-      6px 20px 0px #fc9838, 8px 20px 0px #d82800, 10px 20px 0px #d82800,
-      12px 20px 0px #d82800, 14px 20px 0px #fc9838, 16px 20px 0px #fc9838,
-      18px 20px 0px #fc9838, 20px 20px 0px #fc9838, 22px 20px 0px #fc9838,
-      24px 20px 0px #fc9838, 26px 20px 0px #fc9838, 28px 20px 0px #d82800,
-      30px 20px 0px #d82800, 32px 20px 0px #fc9838, 2px 22px 0px #fc9838,
-      4px 22px 0px #fc9838, 6px 22px 0px #fc9838, 8px 22px 0px #fc9838,
-      10px 22px 0px #fc9838, 12px 22px 0px #fc9838, 14px 22px 0px #fc9838,
-      16px 22px 0px #fc9838, 18px 22px 0px #fc9838, 20px 22px 0px #fc9838,
-      22px 22px 0px #fc9838, 24px 22px 0px #fc9838, 26px 22px 0px #fc9838,
-      28px 22px 0px #fc9838, 30px 22px 0px #fc9838, 32px 22px 0px #fc9838,
-      4px 24px 0px #fc9838, 6px 24px 0px #d82800, 8px 24px 0px #d82800,
-      10px 24px 0px #d82800, 12px 24px 0px #fff, 14px 24px 0px #fff,
-      16px 24px 0px #fff, 18px 24px 0px #fff, 20px 24px 0px #fff,
-      22px 24px 0px #fff, 24px 24px 0px #d82800, 26px 24px 0px #d82800,
-      28px 24px 0px #d82800, 30px 24px 0px #fc9838, 10px 26px 0px #fff,
-      12px 26px 0px #fff, 14px 26px 0px #fff, 16px 26px 0px #fff,
-      18px 26px 0px #fff, 20px 26px 0px #fff, 22px 26px 0px #fff,
-      24px 26px 0px #fff, 10px 28px 0px #fff, 12px 28px 0px #fff,
-      14px 28px 0px #fff, 16px 28px 0px #fff, 18px 28px 0px #fff,
-      20px 28px 0px #fff, 22px 28px 0px #fc9838, 24px 28px 0px #fff,
-      10px 30px 0px #fff, 12px 30px 0px #fff, 14px 30px 0px #fff,
-      16px 30px 0px #fff, 18px 30px 0px #fff, 20px 30px 0px #fff,
-      22px 30px 0px #fc9838, 24px 30px 0px #fff, 12px 32px 0px #fff,
-      14px 32px 0px #fff, 16px 32px 0px #fff, 18px 32px 0px #fff,
-      20px 32px 0px #fc9838, 22px 32px 0px #fff;
-    transform: translate(-0px, -0px);
-    z-index: -1;
-    opacity: 0;
-  }
-  .box {
-    position: absolute;
-    background-color: rgba(46, 37, 37, 0);
-    z-index: 3;
-    width: 34px;
-    height: 34px;
-  }
-  .box:hover + .mush {
-    animation: mush 0.5s linear forwards;
-    opacity: 1;
-  }
-  @keyframes mush {
-    0% {
-      transform: scale(0.8) translate(-0px, -0px);
-    }
-    50% {
-      transform: scale(1.1) translate(-0px, -80px);
-    }
-    100% {
-      transform: scale(1.1) translate(-0px, -35px);
-    }
-  }
-  .tooltip-mario-container {
-    height: 2px;
-    width: 2px;
-    box-shadow: 4px 2px 0px #ce3100, 6px 2px 0px #ce3100, 8px 2px 0px #ce3100,
-      10px 2px 0px #ce3100, 12px 2px 0px #ce3100, 14px 2px 0px #ce3100,
-      16px 2px 0px #ce3100, 18px 2px 0px #ce3100, 20px 2px 0px #ce3100,
-      22px 2px 0px #ce3100, 24px 2px 0px #ce3100, 26px 2px 0px #ce3100,
-      28px 2px 0px #ce3100, 30px 2px 0px #ce3100, 2px 4px 0px #ce3100,
-      4px 4px 0px #ff9c31, 6px 4px 0px #ff9c31, 8px 4px 0px #ff9c31,
-      10px 4px 0px #ff9c31, 12px 4px 0px #ff9c31, 14px 4px 0px #ff9c31,
-      16px 4px 0px #ff9c31, 18px 4px 0px #ff9c31, 20px 4px 0px #ff9c31,
-      22px 4px 0px #ff9c31, 24px 4px 0px #ff9c31, 26px 4px 0px #ff9c31,
-      28px 4px 0px #ff9c31, 30px 4px 0px #ff9c31, 32px 4px 0px #000,
-      2px 6px 0px #ce3100, 4px 6px 0px #ff9c31, 6px 6px 0px #000,
-      8px 6px 0px #ff9c31, 10px 6px 0px #ff9c31, 12px 6px 0px #ff9c31,
-      14px 6px 0px #ff9c31, 16px 6px 0px #ff9c31, 18px 6px 0px #ff9c31,
-      20px 6px 0px #ff9c31, 22px 6px 0px #ff9c31, 24px 6px 0px #ff9c31,
-      26px 6px 0px #ff9c31, 28px 6px 0px #000, 30px 6px 0px #ff9c31,
-      32px 6px 0px #000, 2px 8px 0px #ce3100, 4px 8px 0px #ff9c31,
-      6px 8px 0px #ff9c31, 8px 8px 0px #ff9c31, 10px 8px 0px #ff9c31,
-      12px 8px 0px #ce3100, 14px 8px 0px #ce3100, 16px 8px 0px #ce3100,
-      18px 8px 0px #ce3100, 20px 8px 0px #ce3100, 22px 8px 0px #ff9c31,
-      24px 8px 0px #ff9c31, 26px 8px 0px #ff9c31, 28px 8px 0px #ff9c31,
-      30px 8px 0px #ff9c31, 32px 8px 0px #000, 2px 10px 0px #ce3100,
-      4px 10px 0px #ff9c31, 6px 10px 0px #ff9c31, 8px 10px 0px #ff9c31,
-      10px 10px 0px #ce3100, 12px 10px 0px #ce3100, 14px 10px 0px #000,
-      16px 10px 0px #000, 18px 10px 0px #000, 20px 10px 0px #ce3100,
-      22px 10px 0px #ce3100, 24px 10px 0px #ff9c31, 26px 10px 0px #ff9c31,
-      28px 10px 0px #ff9c31, 30px 10px 0px #ff9c31, 32px 10px 0px #000,
-      2px 12px 0px #ce3100, 4px 12px 0px #ff9c31, 6px 12px 0px #ff9c31,
-      8px 12px 0px #ff9c31, 10px 12px 0px #ce3100, 12px 12px 0px #ce3100,
-      14px 12px 0px #000, 16px 12px 0px #ff9c31, 18px 12px 0px #ff9c31,
-      20px 12px 0px #ce3100, 22px 12px 0px #ce3100, 24px 12px 0px #000,
-      26px 12px 0px #ff9c31, 28px 12px 0px #ff9c31, 30px 12px 0px #ff9c31,
-      32px 12px 0px #000, 2px 14px 0px #ce3100, 4px 14px 0px #ff9c31,
-      6px 14px 0px #ff9c31, 8px 14px 0px #ff9c31, 10px 14px 0px #ce3100,
-      12px 14px 0px #ce3100, 14px 14px 0px #000, 16px 14px 0px #ff9c31,
-      18px 14px 0px #ff9c31, 20px 14px 0px #ce3100, 22px 14px 0px #ce3100,
-      24px 14px 0px #000, 26px 14px 0px #ff9c31, 28px 14px 0px #ff9c31,
-      30px 14px 0px #ff9c31, 32px 14px 0px #000, 2px 16px 0px #ce3100,
-      4px 16px 0px #ff9c31, 6px 16px 0px #ff9c31, 8px 16px 0px #ff9c31,
-      10px 16px 0px #ff9c31, 12px 16px 0px #000, 14px 16px 0px #000,
-      16px 16px 0px #ff9c31, 18px 16px 0px #ce3100, 20px 16px 0px #ce3100,
-      22px 16px 0px #ce3100, 24px 16px 0px #000, 26px 16px 0px #ff9c31,
-      28px 16px 0px #ff9c31, 30px 16px 0px #ff9c31, 32px 16px 0px #000,
-      2px 18px 0px #ce3100, 4px 18px 0px #ff9c31, 6px 18px 0px #ff9c31,
-      8px 18px 0px #ff9c31, 10px 18px 0px #ff9c31, 12px 18px 0px #ff9c31,
-      14px 18px 0px #ff9c31, 16px 18px 0px #ce3100, 18px 18px 0px #ce3100,
-      20px 18px 0px #000, 22px 18px 0px #000, 24px 18px 0px #000,
-      26px 18px 0px #ff9c31, 28px 18px 0px #ff9c31, 30px 18px 0px #ff9c31,
-      32px 18px 0px #000, 2px 20px 0px #ce3100, 4px 20px 0px #ff9c31,
-      6px 20px 0px #ff9c31, 8px 20px 0px #ff9c31, 10px 20px 0px #ff9c31,
-      12px 20px 0px #ff9c31, 14px 20px 0px #ff9c31, 16px 20px 0px #ce3100,
-      18px 20px 0px #ce3100, 20px 20px 0px #000, 22px 20px 0px #ff9c31,
-      24px 20px 0px #ff9c31, 26px 20px 0px #ff9c31, 28px 20px 0px #ff9c31,
-      30px 20px 0px #ff9c31, 32px 20px 0px #000, 2px 22px 0px #ce3100,
-      4px 22px 0px #ff9c31, 6px 22px 0px #ff9c31, 8px 22px 0px #ff9c31,
-      10px 22px 0px #ff9c31, 12px 22px 0px #ff9c31, 14px 22px 0px #ff9c31,
-      16px 22px 0px #ff9c31, 18px 22px 0px #000, 20px 22px 0px #000,
-      22px 22px 0px #ff9c31, 24px 22px 0px #ff9c31, 26px 22px 0px #ff9c31,
-      28px 22px 0px #ff9c31, 30px 22px 0px #ff9c31, 32px 22px 0px #000,
-      2px 24px 0px #ce3100, 4px 24px 0px #ff9c31, 6px 24px 0px #ff9c31,
-      8px 24px 0px #ff9c31, 10px 24px 0px #ff9c31, 12px 24px 0px #ff9c31,
-      14px 24px 0px #ff9c31, 16px 24px 0px #ce3100, 18px 24px 0px #ce3100,
-      20px 24px 0px #ff9c31, 22px 24px 0px #ff9c31, 24px 24px 0px #ff9c31,
-      26px 24px 0px #ff9c31, 28px 24px 0px #ff9c31, 30px 24px 0px #ff9c31,
-      32px 24px 0px #000, 2px 26px 0px #ce3100, 4px 26px 0px #ff9c31,
-      6px 26px 0px #ff9c31, 8px 26px 0px #ff9c31, 10px 26px 0px #ff9c31,
-      12px 26px 0px #ff9c31, 14px 26px 0px #ff9c31, 16px 26px 0px #ce3100,
-      18px 26px 0px #ce3100, 20px 26px 0px #000, 22px 26px 0px #ff9c31,
-      24px 26px 0px #ff9c31, 26px 26px 0px #ff9c31, 28px 26px 0px #ff9c31,
-      30px 26px 0px #ff9c31, 32px 26px 0px #000, 2px 28px 0px #ce3100,
-      4px 28px 0px #ff9c31, 6px 28px 0px #000, 8px 28px 0px #ff9c31,
-      10px 28px 0px #ff9c31, 12px 28px 0px #ff9c31, 14px 28px 0px #ff9c31,
-      16px 28px 0px #ff9c31, 18px 28px 0px #000, 20px 28px 0px #000,
-      22px 28px 0px #ff9c31, 24px 28px 0px #ff9c31, 26px 28px 0px #ff9c31,
-      28px 28px 0px #000, 30px 28px 0px #ff9c31, 32px 28px 0px #000,
-      2px 30px 0px #ce3100, 4px 30px 0px #ff9c31, 6px 30px 0px #ff9c31,
-      8px 30px 0px #ff9c31, 10px 30px 0px #ff9c31, 12px 30px 0px #ff9c31,
-      14px 30px 0px #ff9c31, 16px 30px 0px #ff9c31, 18px 30px 0px #ff9c31,
-      20px 30px 0px #ff9c31, 22px 30px 0px #ff9c31, 24px 30px 0px #ff9c31,
-      26px 30px 0px #ff9c31, 28px 30px 0px #ff9c31, 30px 30px 0px #ff9c31,
-      32px 30px 0px #000, 2px 32px 0px #000, 4px 32px 0px #000, 6px 32px 0px #000,
-      8px 32px 0px #000, 10px 32px 0px #000, 12px 32px 0px #000,
-      14px 32px 0px #000, 16px 32px 0px #000, 18px 32px 0px #000,
-      20px 32px 0px #000, 22px 32px 0px #000, 24px 32px 0px #000,
-      26px 32px 0px #000, 28px 32px 0px #000, 30px 32px 0px #000,
-      32px 32px 0px #000;
-    position: absolute;
-    transform: translate(-30px);
-    z-index: 3;
+  100% {
+    background-size: 100% 100%;
+    transform: translateY(2px);
+    border: 1px solid rgba(205, 235, 218, 0.6);
   }
 }
+
+.button:active {
+  animation: fillButtonAndPress 0.4s ease forwards;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2),
+    inset 0 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+.font {
+  font-family: "Montserrat" ;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.fil0 {
+fill: #fffdef;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    font-family: "Montserrat";
+}
+
+.carousel-inner img {
+    max-height: 300px; /* Ajusta la altura máxima de las imágenes */
+    width: 10px; /* Ajusta el ancho automáticamente */
+    border-radius: 40px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.carousel {
+    max-width: 300px; /* Ajusta el ancho máximo del carousel */
+    margin: auto; /* Centra el carousel en la página */
+}
+
+.h2, h3, p {
+    color: rgb(252, 249, 249);
+    text-align: center;
+    margin-top: 30px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.col {
+    text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+.row {
+    text-align: center;
+}
+
+.name {
+    color:black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark-theme {
+    color:black!important; /* Cambiar el color de las letras a negro */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+  margin: 0 5px; /* Espacio entre los iconos */
+}
+
+.bi-github {
+  margin-top: 20px;
+  color: rgb(171, 64, 192);
+}
+
+.bi-filetype-html {
+  margin-top: 20px;
+  color: blueviolet;
+}
+
+.bi-filetype-css {
+  margin-top: 20px;
+  color: rgb(223, 194, 184);
+}
+
+.bi-filetype-js {
+  margin-top: 20px;
+  color: aquamarine;
+}
+.mb-3{
+margin-top: 20px;
+color:black
+}
+.image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: inherit;
+}
+.content{
+  position: relative;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}  
+.columns{
+  display: flex;
+  /*para que los items se ajusten a las pantallas*/
+  gap: 5px;
+  justify-content: space-around;
+}
+.column{
+  background-color: rgba(0, 0, 0, 0.39);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.slider {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.slider .slide-track {
+  display: flex;
+  animation: scroll 15s linear infinite;
+  -webkit-animation: scroll 15s linear infinite;
+  width: fit-content;
+}
+
+.slider .slide {
+  width: 150px;
+  margin-right: 100px;
+  max-width: 80px;
+}
+
+.slider .slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); /* Mueve todos los slides fuera de la vista hacia la derecha */
+  }
+  100% {
+    transform: translateX(-100%); /* Mueve todos los slides fuera de la vista hacia la izquierda */
+  }
+}
+
+.slider .slide:hover .slide-track {
+  animation-play-state: paused;
+}
+
+.slider .slide:hover {
+  cursor: pointer; /* Cambia el cursor al pasar sobre los slides */
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  overflow: hidden;
+  height: 3rem;
+  background-size: 300% 300%;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+#container-stars {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+}
+
+strong {
+  z-index: 2;
+  font-family: 'Avalors Personal Use';
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #FFFFFF;
+  text-shadow: 0 0 4px white;
+}
+
+#glow {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.circle {
+  width: 100%;
+  height: 30px;
+  filter: blur(2rem);
+  animation: pulse_3011 4s infinite;
+  z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+  background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+  background: rgba(142, 81, 234, 0.704);
+}
+
+.btn:hover #container-stars {
+  z-index: 1;
+  background-color: #212121;
+}
+
+.btn:hover {
+  transform: scale(1.1)
+}
+
+.btn:active {
+  border: double 4px #FE53BB;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.btn:active .circle {
+  background: #FE53BB;
+}
+
+#stars {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+#stars::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+#stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-135rem);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+.card {
+  width: 125px;
+  height: 150px;
+  background-image: linear-gradient(144deg,#8608b4, #492fed 60%,#bd6fda);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: inherit;
+  gap: 5px;
+  justify-content: space-around;
+  display: flex;
+  text-align: center;
+  box-shadow: 0 0 15px 5px rgb(128, 128, 128);
+}
+
+.card span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 1.3em;
+}
+
+.card .job {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 1em;
+}
+
+.card .img {
+  width: 70px;
+  height: 70px;
+  background: #e8e8e8;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.card button {
+  padding: 8px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 30px;
+  background: #e8e8e8;
+  color: #111111;
+  font-weight: 600;
+}
+
+.card button:hover {
+  background: #212121;
+  color: #ffffff;
+}
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.svgContainer {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466)}
