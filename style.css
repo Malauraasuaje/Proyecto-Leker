@@ -88,7 +88,7 @@ p h1 h2 h3 h4 h5 h6{
   
   .button:hover::after {
     animation: glitch_4011 1s;
-    text-shadow: 10 10px 10px black;
+    text-shadow: 10 10px 10px rgba(0, 0, 0, 0.555);
     animation-timing-function: steps(2, end);
     text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
     background-color: transparent;
@@ -100,6 +100,52 @@ p h1 h2 h3 h4 h5 h6{
   }
   
   .button:hover {
+    background-color: transparent;
+    border: 1px solid rgb(0, 255, 213);
+    box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+  }
+  
+  .button1,button1::after {
+    padding: 10px 50px;
+    font-size: 20px;
+    border: 1px;
+    border-radius: 5px;
+    color: rgb(7, 7, 7);
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .button1::after {
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    content: 'Explorar';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  
+  .button1:hover::after {
+    animation: glitch_4011 1s;
+    text-shadow: 10 10px 10px black;
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+    background-color: transparent;
+    border: 3px solid rgb(0, 255, 213);
+  }
+  
+  .button1:hover {
+    text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+  }
+  
+  .button1:hover {
     background-color: transparent;
     border: 1px solid rgb(0, 255, 213);
     box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
@@ -161,124 +207,62 @@ p h1 h2 h3 h4 h5 h6{
       transform: translate(0);
     }
   }
-  .form-container {
-    width: 400px;
-    background: linear-gradient(#fffffff5, white) padding-box,
-                linear-gradient(145deg, transparent 25%,#e81cff, #40c9ff) border-box;
-    border: 2px solid transparent;
-    padding: 32px 24px;
-    font-size: 14px;
-    font-family: inherit;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-sizing: border-box;
-    border-radius: 16px;
-    margin-left: 35%;
-    margin-top: 5rem;
-  }
-  
-  .form-container button:active {
-    scale: 0.95;
-  }
-  
-  .form-container .form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color:#726f6f00 ;
-  }
-  
-  .form-container .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-  
-  .form-container .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #717171;
-    font-weight: 600;
-    font-size: 12px;
-  }
-  
-  .form-container .form-group input {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    color: black;
-    font-family: inherit;
-    background-color: transparent;
-    
-    border: 1px solid #41414193;
-  }
-  
-  .form-container .form-group textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    resize: none;
-    color: #ffffff9c;
-    height: 96px;
-    border: 1px solid #41414165;
-    background-color: transparent;
-    font-family: inherit;
-  }
-  
-  .form-container .form-group input::placeholder {
-    opacity: 0.5;
-  }
-  
-  .form-container .form-group input:focus {
-    outline: none;
-    border-color: rgb(255, 0, 98);
-  }
-  
-  .form-container .form-group textarea:focus {
-    outline: none;
-    border-color: #e81cff;
-  }
-  
-  .form-container .form-submit-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-start;
-    font-family: inherit;
-    color: #717171;
-    font-weight: 600;
-    width: 40%;
-    background: #31313125;
-    border: 1px solid #414141;
-    padding: 12px 16px;
-    font-size: inherit;
-    gap: 8px;
-    margin-top: 8px;
-    cursor: pointer;
-    border-radius: 6px;
-    text-align: center;
-    margin-left: 30%;
-
-  }
-  
-  .form-container .form-submit-btn:hover {
+  /* Estilos para el formulario */
+form{
+  font-family: "Montserrat", sans-serif;
+  width: 500px;
+  background: linear-gradient(#fffffff5, white) padding-box,
+              linear-gradient(145deg, transparent 25%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 36px 28px;
+  background-color: transparent;
+  gap: 40px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  margin-left: 35%;
+  margin-top: 5rem;
+}
+/* Estilo para los botones */
+.boton1{
+  margin-top: 15px;
+  color: #40c9ff;
+}
+/* Estilos para los datos */
+#nombre{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color:#0e0e0e
+}
+#apellidos{
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+#direccion{
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+#email{
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+#contraseña{
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+  .bnt {
     background-color: #fff;
-    border-color: #fff;
+    border-color: #0302024f;
     transition: 0.5s;
   }
   
-
-
-  
-  
-  
-  
-
   .featurette-divider{
     color: black;
-    size: 2px;
+    size: 3px;
   }
 
   .bi{
