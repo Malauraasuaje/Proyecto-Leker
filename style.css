@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .custom-bg{
-  background: white
-  }
+  background: white}
 
 html{
   font-family: "Montserrat", sans-serif;
@@ -210,11 +209,12 @@ p h1 h2 h3 h4 h5 h6{
   /* Estilos para el formulario */
 form{
   font-family: "Montserrat", sans-serif;
-  width: 500px;
+  width: 350px;
+  height: auto;
   background: linear-gradient(#fffffff5, white) padding-box,
               linear-gradient(145deg, transparent 25%,#e81cff, #40c9ff) border-box;
   border: 2px solid transparent;
-  padding: 36px 28px;
+  padding: 24px 20px;
   background-color: transparent;
   gap: 40px;
   box-sizing: border-box;
@@ -224,8 +224,22 @@ form{
 }
 /* Estilo para los botones */
 .boton1{
-  margin-top: 15px;
-  color: #40c9ff;
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.boton1:hover{
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+    scale: 1.1;
+    background: linear-gradient(90deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 50%, hsla(319, 72%, 75%, 1) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 /* Estilos para los datos */
 #nombre{
@@ -238,33 +252,23 @@ form{
   display: flex;
   gap: 2px;
   flex-direction: column;
-}
-#direccion{
-  display: flex;
-  gap: 2px;
-  flex-direction: column;
+  color: black;
 }
 #email{
   display: flex;
   gap: 2px;
   flex-direction: column;
 }
-#contraseña{
+#textarea{
   display: flex;
   gap: 2px;
   flex-direction: column;
 }
-  .bnt {
-    background-color: #fff;
-    border-color: #0302024f;
-    transition: 0.5s;
-  }
-  
-  .featurette-divider{
+.featurette-divider{
     color: black;
     size: 3px;
   }
 
-  .bi{
+.bi{
     color: #0e0e0e;
   }

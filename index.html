@@ -75,7 +75,7 @@
       <div class="col-lg-3 text-center custom-card">
         <img style="max-width: 60%;" src="/img/kun.jpeg" alt="Placeholder Image" class="bd-placeholder-img rounded-circle placeholder-img">
         <h2 style="color: black;">Diseño deportivo</h2>
-        <p style="text-align: justify; color:#070707;">Descubre el emocionante mundo del diseño deportivo en Leker. Explora nuestra colección que capturan la esencia y la energía del deporte. Desde logotipos de equipos hasta ilustraciones de jugadores, cada diseño refleja nuestra pasión por el fútbol. ¡Visita nuestra sección de diseños deportivos y déjate llevar por la emoción del juego!</p>
+        <p style="text-align: justify; color:#070707;">¡Descubre el emocionante mundo del diseño deportivo en Leker! Explora nuestra colección, que captura la esencia y la energía del deporte. Desde logotipos de equipos hasta ilustraciones de jugadores, cada diseño refleja nuestra pasión por el fútbol. Visita nuestra sección de diseños deportivos y déjate llevar por la emoción del juego.</p>
         <p><a class="button1" href="#">Descubre...</a></p>
         
       </div><!-- /.col-lg-4 -->
@@ -88,7 +88,7 @@
       <div class="col-lg-3 text-center custom-card">
         <img src="/img/BE2090BC-BC96-46B7-A35C-9A5AAB02979D.JPG" style="max-width: 60%;" alt="Placeholder Image" class="bd-placeholder-img rounded-circle placeholder-img">
         <h2 style="color:#070707">Diseño de ropa</h2>
-        <p style="text-align: justify; color:#070707;">Aqui encontraras una colección de diseños únicos, </p>
+        <p style="text-align: justify; color:#070707;">¡Te invitamos a conocer nuestra colección de camisetas en Leker! Diseños divertidos y originales, creados con dedicación y creatividad. Cada camiseta es una obra única que refleja nuestro estilo y pasión por el arte. No te pierdas la oportunidad de agregar un toque especial a tu guardarropa con nuestras exclusivas camisetas. ¡Explora la colección!</p>
         <p><a class="button1" href="#">Ver más...»</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -99,8 +99,8 @@
         
             <div class="row featurette mt-5">
               <div class="col-md-7">
-                <h2 style="color:#070707">Sobre mí<span class="text-body-secondary">Leker Design</span></h2>
-                <p class="lead" style="text-align: justify; color: black;">Bienvenidos a Leker, un espacio dedicado a la pasión por el fútbol, los videojuegos y los diseños. Aquí encontraras una variedad de diseños únicos inspirados, y creados con entusiasmo y dedicación. Mi objetico es compartir mi pasión por estos tres mundos y conectar con otros aficionados que comparten el mismo interés. <br>
+                <h2 style="color:#070707">Sobre mí <span class="text-body-secondary"> Leker Design</span></h2>
+                <p class="lead" style="text-align: justify; color: black;">¡Bienvenido a Leker! Te invitamos a sumergirte en el apasionante mundo del diseño. Leker es tu destino ideal para descubrir innovadores diseños tanto de fútbol como de videojuegos. Además, ofrecemos una exclusiva colección de camisetas, todos creados con un toque único y auténtico. Mi objetivo es fusionar mi creatividad y pasión por estos dos mundos en cada diseño, para conectar con otros aficionados que compartan el mismo interés. Explora nuestro sitio y encuentra esa pieza perfecta que hará destacar tu amor por el fútbol y los  videojuegos.  <br>
                 Gracias por visitar Leker y ser parte de esta comunidad.
                 </p>
               </div>
@@ -134,23 +134,26 @@
             </div>
             <form action="" method="post">
               <!-- campo nombre -->
-              <label for="nombre" style="color: #070707;">Nombre:</label> <br>
-              <input type="text" id="nombre" required autofocus minlength="2" maxlength="30" size="30"><br>
-              <label for="apellidos" style="color: #070707;">Apellidos</label> <br>
-              <input type="text" id="apellidos" required minlength="2" maxlength="50" size="30"><br>
+              <label for="nombre" style="color: black;">Nombre:</label> <br>
+              <input type="text" id="nombre" class="nombre" autofocus minlength="2" maxlength="30" size="30" placeholder="Escriba su nombre aquí"><br>
+              <label for="apellidos" style="color: black;">Apellidos</label> <br>
+              <input type="text" id="apellidos" class="apellidos" minlength="2" maxlength="50" size="30" placeholder="Escriba su apellido aquí"><br>
               <!-- campos email -->
-              <label for="email" style="color: #070707;">Email</label> <br>
-              <input type="email" name="email" id="email" required size="30"><br>
-              <!-- campo de contraseña -->
-              <label for="password" style="color: #070707;">Contraseña</label> <br>
-              <input type="password" name="password" id="password" required minlength="6" size="30"><br>
+              <label for="email" style="color: black;">Email</label> <br>
+              <input type="email" name="email" id="email" class="email" required size="30" placeholder="Escriba su email aquí"><br>
+              <!-- campo de textarea -->
+              <label for="textarea" style="color: black;">Campo de sugerencia:</label><br><br>
+              <textarea name="textarea" id="textarea" class="textarea" aria-placeholder="true" rows="3" cols="30" placeholder="Escriba su sugerencia aquí">
+              </textarea>
               <br>
               <!-- Botones -->
-              <input class="bnt" type="submit" value="Enviar" id="enviar">
-              <input class="bnt" type="reset" value="Borrar" id="borrar">
+              <div class="div-buttom">
+                <button type="submit" class="boton1">Enviar</button></a>
+                <button type="reset" class="boton1">Borrar</button>
+            </div>
           </form> 
       
-        <footer style="background-color: rgba(245, 244, 244, 0.918) width:100%;" class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
+        <footer style="background-color: rgba(245, 244, 244, 0.918) width=100%;" class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                 <svg class="bi" width="15" height="18">
