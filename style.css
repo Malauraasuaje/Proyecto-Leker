@@ -274,8 +274,8 @@ form{
   }
   .tarjeta {
     box-sizing: border-box;
-    width: 190px;
-    height: 254px;
+    width: 250px;
+    height: 320px;
     background: rgba(217, 217, 217, 0.58);
     border: 1px solid white;
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
@@ -299,4 +299,8 @@ form{
   
   .tarjeta:active {
     transform: scale(0.95) rotateZ(1.7deg);
+  }
+  .t1{
+    display: flex;
+    justify-content: space-around;
   }
