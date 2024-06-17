@@ -304,3 +304,12 @@ form{
     display: flex;
     justify-content: space-around;
   }
+
+  @media screen and (max-width: 600px) {
+
+    .custom-form{
+
+      max-width: 40px !important;
+    }
+
+  }
