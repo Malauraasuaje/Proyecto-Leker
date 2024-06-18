@@ -63,7 +63,7 @@ p h1 h2 h3 h4 h5 h6{
     font-size: 20px;
     border: 1px;
     border-radius: 5px;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0);
     background-color: transparent;
     position: relative;
   }
@@ -146,8 +146,8 @@ p h1 h2 h3 h4 h5 h6{
   
   .button1:hover {
     background-color: transparent;
-    border: 1px solid rgb(0, 255, 213);
-    box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+    border: 1px solid rgb(8, 8, 8);
+    box-shadow: 0px 10px 10px -10px rgb(8, 8, 8);
   }
   
   @keyframes glitch_4011 {
@@ -212,7 +212,7 @@ form{
   width: 350px;
   height: auto;
   background: linear-gradient(#fffffff5, white) padding-box,
-              linear-gradient(145deg, transparent 25%,#e81cff, #40c9ff) border-box;
+              linear-gradient(145deg, transparent 25%,#020202, #656666) border-box;
   border: 2px solid transparent;
   padding: 24px 20px;
   background-color: transparent;
@@ -223,9 +223,9 @@ form{
   margin-top: 5rem;
 }
 /* Estilo para los botones */
-.boton1{
+.button{
     color: black;
-    background: white;
+    background: rgba(255, 255, 255, 0);
     padding: 5px;
     border-radius: 10px;
     transition: 0.3s;
@@ -233,14 +233,15 @@ form{
     font-weight: bold;
     margin-top: 15px;
 }
-.boton1:hover{
-    color: black;
-    transition: 0.3s;
-    cursor: pointer;
-    scale: 1.1;
-    background: linear-gradient(90deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 50%, hsla(319, 72%, 75%, 1) 100%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19);
+.button:hover{
+  color: black;
+  transition: 0.3s;
+  cursor: pointer;
+  scale: 1.1;
+  background: linear-gradient(90deg, transparent 0%, rgba(108, 109, 109, 0) 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
+
 /* Estilos para los datos */
 #nombre{
   display: flex;
