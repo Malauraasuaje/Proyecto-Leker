@@ -86,7 +86,7 @@ p h1 h2 h3 h4 h5 h6{
   }
   
   .button:hover::after {
-    animation: glitch_4011 1s;
+    animation: glitch_4011 3s;
     text-shadow: 10 10px 10px rgba(0, 0, 0, 0.555);
     animation-timing-function: steps(2, end);
     text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
@@ -132,7 +132,7 @@ p h1 h2 h3 h4 h5 h6{
   }
   
   .button1:hover::after {
-    animation: glitch_4011 1s;
+    animation: glitch_4011 3s;
     text-shadow: 10 10px 10px black;
     animation-timing-function: steps(2, end);
     text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
@@ -214,7 +214,7 @@ form{
   background: linear-gradient(#fffffff5, white) padding-box,
               linear-gradient(145deg, transparent 25%,#020202, #656666) border-box;
   border: 2px solid transparent;
-  padding: 24px 20px;
+  padding: 30px;
   background-color: transparent;
   gap: 40px;
   box-sizing: border-box;
@@ -228,7 +228,7 @@ form{
     background: rgba(255, 255, 255, 0);
     padding: 5px;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: 0.5s;
     margin-right: 10px;
     font-weight: bold;
     margin-top: 15px;
@@ -284,7 +284,7 @@ form{
     border-radius: 17px;
     text-align: center;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.7s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -303,7 +303,7 @@ form{
   }
   .t1{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly
   }
 
   @media screen and (max-width: 600px) {
