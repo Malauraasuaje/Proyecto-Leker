@@ -18,7 +18,7 @@ p h1 h2 h3 h4 h5 h6{
 
 .nav-item .nav-link:hover{
     margin: 20px;
-    color: chocolate;
+    color: rgba(153, 149, 145, 0.5);
 }
 
 .custom-navbar{
@@ -39,14 +39,6 @@ p h1 h2 h3 h4 h5 h6{
     padding: 10px;
     border-radius: 20px;
     margin: 10px;
-  }
-  .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: black;
-    font-family: "Montserrat";
 }
 .social-icons {
     display: flex;
@@ -247,7 +239,7 @@ form{
   display: flex;
   flex-direction: column;
   gap: 2px;
-  color:#0e0e0e
+  color:#0e0e0e;
 }
 #apellidos{
   display: flex;
@@ -313,4 +305,10 @@ form{
       max-width: 40px !important;
     }
 
+  }
+
+  footer{text-align: center;
+        width: 100%;
+        color: black;
+        font-family: "Montserrat";
   }
