@@ -201,7 +201,7 @@ p h1 h2 h3 h4 h5 h6{
   /* Estilos para el formulario */
 form{
   font-family: "Montserrat", sans-serif;
-  width: 350px;
+  width: 330px;
   height: auto;
   background: linear-gradient(#fffffff5, white) padding-box,
               linear-gradient(145deg, transparent 25%,#020202, #656666) border-box;
@@ -285,17 +285,29 @@ form{
     color: black;
   }
   
-  .tarjeta:hover {
-    border: 1px solid black;
-    transform: scale(1.05);
-  }
-  
-  .tarjeta:active {
-    transform: scale(0.95) rotateZ(1.7deg);
-  }
+  .tarjeta {
+    width: 250px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 300ms;
+   }
+   
+   .tarjeta:hover {
+    opacity: 0.8;
+    transform: scale(1.10);
+   }
+   
   .t1{
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .tarjeta img {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 
   @media screen and (max-width: 600px) {
@@ -312,3 +324,4 @@ form{
         color: black;
         font-family: "Montserrat";
   }
+  
