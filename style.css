@@ -283,6 +283,7 @@ form{
     user-select: none;
     font-weight: bolder;
     color: black;
+    justify-content: space-evenly;
   }
   
   .tarjeta {
