@@ -6,6 +6,8 @@ let canvasHeight = 400;
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
+// Resto del código del juego y ajuste responsivo según lo mencionado anteriormente
+
 const player1 = {
     x: 50,
     y: canvasHeight / 2 - 25,
