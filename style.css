@@ -344,15 +344,27 @@ form{
       border-radius: 50px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
       width: 100%;
-      max-width: 600px;
+      max-width: 800px;
       height: auto;
-      margin-top: 5rem;
-      
+      margin-top: 5rem;    
   }
   
   .scoreboard {
+      gap: 40px;
+      box-sizing: border-box;
+      border-radius: 16px;
+      margin-left: 60%;
+      margin-top: 5rem;
       color: #ffffff;
       font-size: 24px;
-      margin: 30px;
+      margin: 50px;
       text-align: center;
+  }
+
+  #games{
+    gap: 40px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-left: 20%;
+    margin-top: 5rem;
   }
